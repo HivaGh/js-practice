@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const car = {
+            brand : "Mercedes",
+            model : "G-class",
+            year : "2024",
+            age : function(){
+               const currentAge = 2025- this.year;
+               return currentAge;
+            }
+        };
+
+        window.alert("Car's age = " + car.age());
+
+    </script>
+</body>
+</html>
