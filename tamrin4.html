@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = 18,
+        myNumber = "",
+        position = "",
+        a = 1.654;
+      const cars = ["BMW", "KIA", "Poursche"];
+
+      function carsValues(val){
+        console.log(val);
+      }
+
+      myNumber = x.toString(8);
+      console.log(myNumber);
+
+      window.alert(cars[1]);
+      console.log(cars.length);
+      cars.forEach(carsValues);
+      cars.splice(2, 0, "Alpha Romeo");
+      console.log(cars);
+      position = cars.indexOf("KIA")+1;
+      console.log("KIA is found in position" + position);
+
+      console.log(parseInt("10 years"));
+
+      console.log(a.toPrecision(2));
+    </script>
+  </body>
+</html>

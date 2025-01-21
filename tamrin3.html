@@ -12,20 +12,20 @@
 
     <script>
         const book = {
-    title: "JavaScript Guide",
-    author: "John Doe",
-    year: 2021 
-    };
+            title: "JavaScript Guide",
+            author: "John Doe",
+            year: 2021 
+        };
 
-    let text = "";
-    for(let [key, value] of Object.entries(book)){
-        text += key + ": " + value + "<br>";
-    };
+        let text = "";
+        for(let [key, value] of Object.entries(book)){
+            text += key + ": " + value + "<br>";
+        };
 
-    window.alert(text.charAt(0) + " " + text.substr(0 , 4));
-    
-    // let text= JSON.stringify(book);
-    document.getElementById("text").innerHTML = text;
+        window.alert(text.charAt(0) + " " + text.substr(0 , 4));
+        
+        // let text= JSON.stringify(book);
+        document.getElementById("text").innerHTML = text;
 
     </script>
 
