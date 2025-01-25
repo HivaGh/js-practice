@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      // Sorting Object Arrays 
+
+      const cars = [
+        { type: "Volvo", year: 2016 },
+        { type: "Saab", year: 2001 },
+        { type: "BMW", year: 2010 },
+      ];
+      cars.sort(function (a, b) {
+        return a.year - b.year;
+      });
+      window.alert(
+        cars[0].type +
+          " " +
+          cars[0].year +
+          " " +
+          cars[1].type +
+          " " +
+          cars[1].year +
+          " " +
+          cars[2].type +
+          " " +
+          cars[2].year
+      );
+
+      // Array Minimum Method
+
+      const points = [10, 3, 50, 18, 20, 21];
+      function myArrayMin(arr) {
+        let len = arr.length;
+        let min = Infinity;
+        while (len--) {
+          if (arr[len] < min) {
+            min = arr[len];
+          }
+        }
+        return min;
+      }
+      console.log(myArrayMin(points));
+
+      // Math rounding methods
+
+      let myNumber = Math.random() * 10;
+      console.log(
+        "my number is:" + myNumber + 
+        " round:" + Math.round(myNumber) +
+        " ceil:" + Math.ceil(myNumber) +
+        " floor:" + Math.floor(myNumber) +
+        " trunc:" + Math.trunc(myNumber)
+        )
+
+        //Error handling
+
+        try {
+            console.log(myInstance);
+        }
+        catch (err){
+            console.log("The error is: " + err)
+        }
+        console.log("Code still works");
+
+    </script>
+  </body>
+</html>
