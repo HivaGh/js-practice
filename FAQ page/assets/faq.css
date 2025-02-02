@@ -1,0 +1,28 @@
+.container{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+}
+
+.content{
+      display: flex;
+      flex-direction: column;
+}
+
+.question-btn{
+      width: 400px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+}
+
+.answer{
+      width: 400px;
+      display: none;
+}
+
+.show-answer {
+      width: 400px;
+      display: block;
+  }
