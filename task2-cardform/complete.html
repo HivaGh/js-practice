@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <img src="bg-main-desktop.png" class="back-img"/>
+        <div class="front-card">
+            <div>
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+            </div>
+            <img src="bg-card-front.png" class="frontCard-img"/>
+            <div class="card-details">
+                <span class="card-number" id="card-number-display">0000 0000 0000 0000</span>
+                <div class="card-info">
+                  <span class="card-holder" id="card-holder-display">JANE APPLESEED</span>
+                  <span class="card-exp">
+                    <span id="exp-year-display">00</span>
+                    /
+                    <span id="exp-month-display">00</span>
+                  </span>
+                </div>
+              </div>
+        </div>
+        <div class="back-card">
+            <img src="bg-card-back.png" class="backCard-img"/>
+            <span class="cvc" id="card-cvc-display">000</span>
+        </div>
+      </div>
+      <div class="right-container">
+        <form class="form-complete">
+            <div class="circle-complete">
+                <i class="ri-check-line"></i>
+            </div>
+            <h1>Thank You!</h1>
+            <p>We've added your card details</p>
+          <button type="submit" class="btn-complete">Continue</button>
+        </form>
+      </div>
+    </div>
+    <script src="complete.js"></script>
+  </body>
+</html>
